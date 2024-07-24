@@ -5,7 +5,7 @@ const Table = ({ data }) => {
   return (
     <div>
       <table>
-        <thead>
+        <thead >
           <tr>
             <th>Id</th>
             <th>Name</th>

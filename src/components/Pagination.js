@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Table from "./PaginationTable";
+import "./style.css";
 
 const Pagination = () => {
   const [data, setData] = useState([]);
@@ -50,11 +51,12 @@ const Pagination = () => {
 
   return (
     <div>
+      <h1>Employee Data Table</h1>
       <Table data={currentPost}/>
 
-      <button onClick={handleClickPrevious}>Previous</button>
+      <button onClick={handleClickPrevious} className="btn">Previous</button>
       <span>{currentPage}</span>
-      <button onClick={handlClickNext}>Next</button>
+      <button onClick={handlClickNext} className="btn">Next</button>
 
     </div>
   );
